@@ -1,0 +1,233 @@
+html, body{
+    /* width: 100%;
+    height: 100%; */
+    margin: auto;
+    box-sizing: border-box;
+}
+header img{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    object-fit: cover;
+}
+.texte_entete{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+    color: white;
+}
+#texte::before, #texte::after{
+    content: "\002605";
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.texte_entete h1{
+    font-size: 60px;
+}
+.ligne_horizontale{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+.ligne_horizontale::before{
+    content: "";
+    flex: 0.1 1;
+    border-bottom: 5px solid rgb(222, 214, 201);
+    margin: auto;
+}
+.ligne_horizontale::after{
+    content: "";
+    flex: 0.1 0.1;
+    border-bottom: 5px solid rgb(222, 214, 201);
+    margin: auto;
+}
+
+/*Code pour le menu principal*/
+#menu_principal{
+    width: 1024px;
+    height: 150px;
+    margin: auto;
+}
+#menu_principal ul{
+    margin-top: 7em;
+}
+#menu_principal ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 50px;
+    padding-left: 35px;
+    font-size: 10px;
+}
+#menu_principal ul li a{
+    text-decoration: none;
+    color: darkgray;
+}
+#menu_principal ul li a:hover{
+    color: #343434;
+}
+#menu_principal ul li a img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+}
+ /*Section à propos*/
+ #about{
+    width: 600px;
+    margin: auto;
+ }
+ .title_h2{
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    color: #343434;
+ }
+ #about p{
+    text-align: center;
+    color: #343434;
+ }
+
+ /*Présentation des différents services*/
+  #services{
+    width: 1024px;
+    margin: auto;
+ }
+ .services{
+    display: inline-block;
+    padding-right: 48px;
+    padding-left: 60px;
+ }
+ .services img{
+    display: block;
+    width: 50px;
+    height: 50px;
+ }
+ .services figcaption{
+    font-size: 10px;
+    text-align: center;
+    color: #343434;
+    margin-bottom: 100px;
+ }
+
+ /*section contact us*/
+#contact_us{
+    height: 500px;
+    background-color: #1d1e1f;
+}
+
+/*Partie description à gauche*/
+.partie_description{
+    margin-top: 50px;
+    margin-left: 50px;
+    color: white;
+    width: 250px;
+    display: inline-block;
+}
+.partie_description h2{
+    font-size: 35px;
+    font-weight:100;
+}
+.partie_description p{
+    font-size: 14px;
+    color: darkgray;
+}
+.partie_description button{
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 15px;
+    width: 110px;
+    height: 30px;
+    font-size: 10px;
+}
+.partie_description button:hover{
+    background-color: #ddd;
+}
+
+/*Association de plusieurs logos*/
+.partie_logo{
+    width: 1000px;
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.partie_logo img{
+    padding-right: 200px;
+    padding-top: 50px;
+}
+
+/*section slider de citation*/
+#slider_citation{
+    width: 1300px;
+    margin: auto;
+    text-align: center;
+}
+#slider_citation{
+    width: 1100px;
+    overflow: hidden;
+}
+.images{
+    display: flex;
+    animation-duration: 40s;
+    animation-name: MonSlider;
+    animation-iteration-count: infinite;
+}
+
+@keyframes MonSlider{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-1100px);
+    }
+    50%{
+        transform: translateX(-2200px);
+    }
+    75%{
+        transform: translateX(-3300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*Partie portefolio*/
+#portefolio{
+    display: flex;
+    justify-content: center;
+}
+#portefolio img{
+    width: 400px;
+    height: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#portefolio a img:hover{
+    border: 5px solid #ddd;
+    border-radius: 25px;
+}
+
+/*le footer*/
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    background-color: #1d1e1f;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+}
+/*Partie copyright*/
+.col1{
+    margin-left: 50px;
+    font-size: 12px;
+}
+/*Images des réseaux sociaux*/
+.col2{
+    margin-left: 65%;
+}
+.col2 img{
+    width: 25px;
+    height: 25px;
+}
